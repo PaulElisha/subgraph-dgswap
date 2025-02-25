@@ -1,5 +1,8 @@
 import React from "react";
-import { Factory } from "@PaulElisha/subgraph-dgswap";
+// import { Factory } from "@PaulElisha/subgraph-dgswap";
+
+import { Factory } from "/home/agantem/Desktop/dgswap/dgswapSubgraphSDK/src";
+
 
 interface FactoryCardProps {
   factory: Factory;

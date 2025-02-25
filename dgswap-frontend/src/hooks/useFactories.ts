@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { sdk } from "../lib/sdk";
-import { Factory } from "@PaulElisha/subgraph-dgswap";
+import { Factory } from "/home/agantem/Desktop/dgswap/dgswapSubgraphSDK/src";
+
+
 
 export const useFactories = (limit: number = 5) => {
   const [factories, setFactories] = useState<Factory[]>([]);
