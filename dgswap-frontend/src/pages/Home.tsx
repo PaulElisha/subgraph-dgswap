@@ -27,10 +27,10 @@ export const Home: React.FC = () => {
       {/* Hero Section */}
       <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-pink-600">
-          DragonSwap Aggregator
+          DragonSwap Subgraph Aggregator
         </h2>
         <p className="mt-2 sm:mt-4 text-base sm:text-lg text-gray-300 max-w-xl sm:max-w-2xl mx-auto">
-          Explore real-time factory data from the DragonSwap ecosystem on Arbitrum One.
+          Explore real-time factory data from the DragonSwap ecosystem on Kaia.
         </p>
         {/* <div className="mt-4 sm:mt-6 lg:mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 max-w-[280px] sm:max-w-xl lg:max-w-3xl mx-auto">
           <StatCard
@@ -63,7 +63,7 @@ export const Home: React.FC = () => {
             </button>
             <div className="flex items-center gap-2 sm:gap-4">
               <label htmlFor="limit" className="text-gray-300 text-sm sm:text-base">
-                Items (1-10):
+                Select a Query (1-10):
               </label>
               <input
                 id="limit"
@@ -82,7 +82,7 @@ export const Home: React.FC = () => {
       {/* Data Display Section */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gray-800/50 backdrop-blur-md">
         <div className="max-w-md sm:max-w-2xl lg:max-w-5xl mx-auto">
-          <h3 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-8">Factory Explorer</h3>
+          <h3 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-8">DragonSwap Subgraph Explorer</h3>
           <DataList factories={factories} pools={[]} loading={loading} error={error} />
         </div>
       </section>
@@ -90,7 +90,7 @@ export const Home: React.FC = () => {
       {/* Footer */}
       <footer className="py-6 sm:py-8 text-center text-gray-400 text-sm sm:text-base">
         <p>
-          Powered by <a href="https://thegraph.com" className="text-indigo-400 hover:underline">The Graph</a> | Built with ❤️ by xAI
+          Powered by <a href="https://thegraph.com" className="text-indigo-400 hover:underline">The Graph on Kaia Blockchain</a> | Paul Elisha, Agantem
         </p>
       </footer>
     </div>
