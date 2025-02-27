@@ -16,7 +16,6 @@ Live on Netlify: [https://dgswapapp.netlify.app/](https://dgswapapp.netlify.app/
 
 ## Installation
 
-```bash
 git clone https://github.com/CoderOfPHCity/subgraphDgswap.git
 cd subgraphDgswap/dgswap-frontend
 npm install
