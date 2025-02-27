@@ -48,7 +48,7 @@ const ENDPOINT = `https://gateway.thegraph.com/api/${process.env.VITE_GRAPH_API_
 Add to `.env`:
 
 ```
-VITE_GRAPH_API_KEY=your-api-key
+VITE_GRAPH_API_KEY=
 ```
 
 # Submodule Setup
@@ -78,5 +78,3 @@ MIT License. See [LICENSE](LICENSE).
 # Contact
 
 - GitHub: [PaulElisha](https://github.com/PaulElisha), [CoderOfPHCity](https://github.com/CoderOfPHCity)
-- Built with ❤️ for the Kaia blockchain community.
-```
