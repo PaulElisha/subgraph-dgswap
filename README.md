@@ -14,39 +14,67 @@ A sleek, React-based frontend for querying DragonSwap data on the Kaia blockchai
 
 Live on Netlify: [https://dgswapapp.netlify.app/](https://dgswapapp.netlify.app/)
 
-## Installation
+# Installation
 
 ```bash
 git clone https://github.com/CoderOfPHCity/subgraphDgswap.git
 cd subgraphDgswap/dgswap-frontend
 npm install
-Prerequisites
-Node.js (v16+).
-Submodule initialized (see Submodule Setup (#submodule-setup)).
-Usage
+```
+
+# Prerequisites
+
+- Node.js (v16+).
+- Submodule initialized (see [Submodule Setup](#submodule-setup)).
+
+# Usage
+
 Run locally:
-bash
+
+```bash
 npm run dev
-Open http://localhost:5173.
-Configuration
-Set the Graph API key in dgswap-frontend/src/lib/sdk.ts:
-typescript
+```
+
+Open [http://localhost:5173](http://localhost:5173).
+
+# Configuration
+
+Set the Graph API key in `dgswap-frontend/src/lib/sdk.ts`:
+
+```typescript
 const ENDPOINT = `https://gateway.thegraph.com/api/${process.env.VITE_GRAPH_API_KEY}/subgraphs/id/2QEZxd4f115iTkW38MFmL6KZsq9uAYmCaFF2KLrZeSjK`;
-Add to .env:
-VITE_GRAPH_API_KEY=your-api-key
-Submodule Setup
-Initialize the dgswapSubgraphSDK submodule:
-bash
+```
+
+Add to `.env`:
+
+```
+VITE_GRAPH_API_KEY=
+```
+
+# Submodule Setup
+
+Initialize the `dgswapSubgraphSDK` submodule:
+
+```bash
 git submodule update --init --recursive
+```
+
 Import SDK types:
-typescript
+
+```typescript
 import { Factory } from "../../dgswapSubgraphSDK/src";
-Netlify Deployment
-Base Directory: dgswap-frontend
-Build Command: npm run build
-Publish Directory: dist
-License
-MIT License. See LICENSE.
-Contact
-GitHub: PaulElisha, CoderOfPHCity
-Built with ❤️ for the Kaia blockchain community.
+```
+
+# Netlify Deployment
+
+- **Base Directory**: `dgswap-frontend`
+- **Build Command**: `npm run build`
+- **Publish Directory**: `dist`
+
+# License
+
+MIT License. See [LICENSE](LICENSE).
+
+# Contact
+
+- GitHub: [PaulElisha](https://github.com/PaulElisha), [CoderOfPHCity](https://github.com/CoderOfPHCity)
