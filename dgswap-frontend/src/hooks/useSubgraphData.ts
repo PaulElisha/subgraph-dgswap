@@ -26,6 +26,12 @@ export const useSubgraphData = (dataType: DataType, limit: number = 5) => {
           setFactories([]); // Reset factories
           console.log("Fetched pools:", data);
         }
+        else if (dataType === "tokens") {
+          // In a real implementation, you would fetch token data here
+          // For now, we'll just reset both
+          setFactories([])
+          setPools([])
+        }
       } catch (err) {
         const errorMessage = err instanceof Error ? err.message : `Failed to fetch ${dataType}`;
         console.error("Fetch error:", err);
